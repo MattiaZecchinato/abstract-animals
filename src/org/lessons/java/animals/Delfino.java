@@ -1,6 +1,8 @@
 package org.lessons.java.animals;
 
-public class Delfino extends AbstractAnimale {
+import org.lessons.java.animals.inteface.Swimmable;
+
+public class Delfino extends AbstractAnimale implements Swimmable {
     private int groupSize;
     private double swimSpeed; // kph
 
@@ -34,5 +36,10 @@ public class Delfino extends AbstractAnimale {
     @Override
     public void eat() {
         System.out.println("The dolphine eat fish");
+    }
+
+    @Override
+    public void swim() {
+        System.out.println("I'm swimming");
     }
 }
