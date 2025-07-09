@@ -1,6 +1,8 @@
 package org.lessons.java.animals;
 
-public class Passerotto extends AbstractAnimale {
+import org.lessons.java.animals.inteface.Flyable;
+
+public class Passerotto extends AbstractAnimale implements Flyable {
     private String songType;
     private double wingSpan; // cm
     private double beakLength; // cm
@@ -44,5 +46,10 @@ public class Passerotto extends AbstractAnimale {
     @Override
     public void eat() {
         System.out.println("The bird eat seeds");
+    }
+
+    @Override
+    public void fly() {
+        System.out.println("I'm flying");
     }
 }

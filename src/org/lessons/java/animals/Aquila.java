@@ -1,6 +1,8 @@
 package org.lessons.java.animals;
 
-public class Aquila extends AbstractAnimale {
+import org.lessons.java.animals.inteface.Flyable;
+
+public class Aquila extends AbstractAnimale implements Flyable {
     private double flightAltitude; // m
     private double wingSpan; // cm
     private double beakLength; // cm
@@ -44,5 +46,10 @@ public class Aquila extends AbstractAnimale {
     @Override
     public void eat() {
         System.out.println("The eagle eat meat");
+    }
+
+    @Override
+    public void fly() {
+        System.out.println("I'm flying");
     }
 }
