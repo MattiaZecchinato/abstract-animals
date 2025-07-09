@@ -1,5 +1,8 @@
 package org.lessons.java.animals;
 
+import org.lessons.java.animals.inteface.Flyable;
+import org.lessons.java.animals.inteface.Swimmable;
+
 public class MainAnimals {
     public static void main(String[] args) {
         Cane goldenRetriever = new Cane("Golden Retriever", 5, "Ellie", "gold");
@@ -15,6 +18,7 @@ public class MainAnimals {
         passeroDomestico.sound();
         passeroDomestico.eat();
         System.out.println(passeroDomestico.getSongType());
+        makeFly(passeroDomestico);
 
         System.out.println("----------------------");
 
@@ -24,6 +28,7 @@ public class MainAnimals {
         aquilaReale.eat();
         System.out.println(
                 aquilaReale.getSpecies() + " flies at an altitude of " + aquilaReale.getFlightAltitude() + "m");
+        makeFly(aquilaReale);
 
         System.out.println("----------------------");
 
@@ -32,5 +37,25 @@ public class MainAnimals {
         delfinoComune.sound();
         delfinoComune.eat();
         System.out.println(delfinoComune.getSpecies() + " swims at " + delfinoComune.getSwimSpeed() + " kph");
+        makeSmiw(delfinoComune);
+    }
+
+    /**
+     * Invokes the fly behavior on any object that implements the Flyable interface.
+     * 
+     * @param animal an object that can fly (implements Flyable)
+     */
+    static void makeFly(Flyable animal) {
+        animal.fly();
+    }
+
+    /**
+     * Invokes the swim behavior on any object that implements the Swimmable
+     * interface.
+     * 
+     * @param animal an object that can swim (implements Swimmable)
+     */
+    static void makeSmiw(Swimmable animal) {
+        animal.swim();
     }
 }
