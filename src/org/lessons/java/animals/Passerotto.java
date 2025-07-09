@@ -1,6 +1,6 @@
 package org.lessons.java.animals;
 
-public class Passerotto extends Animale {
+public class Passerotto extends AbstractAnimale {
     private String songType;
     private double wingSpan; // cm
     private double beakLength; // cm

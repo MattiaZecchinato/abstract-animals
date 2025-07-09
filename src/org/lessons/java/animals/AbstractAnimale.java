@@ -1,10 +1,10 @@
 package org.lessons.java.animals;
 
-public abstract class Animale {
+public abstract class AbstractAnimale {
     protected String species;
     protected int age;
 
-    public Animale(String species, int age) {
+    public AbstractAnimale(String species, int age) {
         this.species = species;
         this.age = age;
     }

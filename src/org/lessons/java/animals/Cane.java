@@ -1,6 +1,6 @@
 package org.lessons.java.animals;
 
-public class Cane extends Animale {
+public class Cane extends AbstractAnimale {
     private String name;
     private String colour;
 

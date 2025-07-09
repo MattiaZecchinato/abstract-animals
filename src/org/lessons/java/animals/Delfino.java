@@ -1,6 +1,6 @@
 package org.lessons.java.animals;
 
-public class Delfino extends Animale {
+public class Delfino extends AbstractAnimale {
     private int groupSize;
     private double swimSpeed; // kph
 

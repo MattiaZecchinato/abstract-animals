@@ -1,6 +1,6 @@
 package org.lessons.java.animals;
 
-public class Aquila extends Animale {
+public class Aquila extends AbstractAnimale {
     private double flightAltitude; // m
     private double wingSpan; // cm
     private double beakLength; // cm
